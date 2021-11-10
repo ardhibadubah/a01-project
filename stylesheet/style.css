@@ -159,7 +159,23 @@ img {
 
 .galeri {
     background-color: orange;
+    text-align :center;
+    margin : 160px 0
 }
+.galeri h1{
+        font-style: normal;
+        font-weight: 600;
+        line-height: 88px;
+        text-transform:uppercase;
+        text-decoration-line: underline;
+    }
+.text-galeri{
+    background-color :black;}
+.text-galeri h4{ color:orange;
+}
+.text-galeri p{ color:white;
+}
+
 
 .contact {
     background-color: peru;
