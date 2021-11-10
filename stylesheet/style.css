@@ -160,7 +160,7 @@ img {
 .about {
     background-color: magenta;
     text-align: center;
-    margin: 160px 0;
+    align-items: center;
     display: flex;
     justify-content:center;
     flex-direction: column;
