@@ -246,10 +246,76 @@ img {
 
 
 .contact {
-    background-color: peru;
+    
+    display: flex;
+    justify-content: space-between;
+    padding-top: 240px;
+    padding-bottom: 120px;
+    align-items: center;
+}
+.judul h1 {
+    font-weight: 600;
+    font-size: 72px;
 }
 
+.kontak {
+    display: flex;
+    
+}
+
+.kontak input {
+    width: 50%;
+}
+
+.formulir {
+    display: flex;
+    flex-direction: column;  
+}
+
+input {
+    width: 457px;
+    height: 49px;
+    padding: 0 16px;
+    margin: 8px;
+    border-radius: 25px;
+}
+textarea {
+    width: 457px;
+    height: 100px;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 25px;
+}
+.tombol-kirim {
+    background-color: var(--giants);
+    font-weight: 800;
+    
+}
+.tombol-kirim:hover {
+    background-color: var(--american);
+    color: var(--giants);
+    cursor: pointer;
+}
 
 .footer {
-    background-color: orange;
+    background-color: var(--giants);
+    color: var(--cultured);
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 80px;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sosmed a {
+    font-size: 24px;
+    color:var(--cultured);
+
+
+}
+.sosmed a:hover {
+    color: var(--american);
 }
