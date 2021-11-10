@@ -1,18 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cultured);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --cultured : #F6F5F6;
+    --giants : #ff5f16;
+    --american : #4d1860;
+    --eerie : #191124;
+}
+
+/* ======================== Header ======================== */
+
 .header {
-    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 80px;
+    padding: 16px 0;
+    text-transform: uppercase;
 }
 
+.header-left {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.header-left h2 {
+    font-size: 20px;
+    color: var(--eerie);
+    font-weight: 700;
+}
+
+.header-right {
+    flex: 5;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50%;
+}
+
+.navigation a {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--eerie);
+}
+
+.section {
+    margin: 0 80px;
+}
+
+/* ======================== Main ======================== */
 .main {
-    background-color: cyan;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
 }
 
-.content {
+.main-title {
+    flex: 6;
+}
+
+.main-title h1 {
+    font-weight: 600;
+    font-size: 120px;
+    position: relative;
+    left: -12px;
+    top: -80px;
+}
+
+.main-title .number {
+    transform: rotate(90deg);
+    position: relative;
+    top: 320px;
+    left: -280px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    flex: 5;
+}
+
+.image img {
+    width: 72%;
+    min-width: 320px;
+}
+
+.image-note {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 24px;
+    top: 140px;
+    border-bottom: 1px solid var(--eerie);
+}
+
+.note-sentence {
+    position: absolute;
+    top: 180px;
+    right: 565px;
+    width: 240px;
+}
+
+.note-sentence h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    -webkit-text-stroke: 1px var(--eerie);
+    -webkit-text-fill-color: var(--cultured);
+}
+
+.note-sentence p {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.rectangle {
+    background-color: var(--giants);
+    position: absolute;
+    width: 60%;
+    height: 22vw;
+    right: 0;
+    top: 283px;
+    mix-blend-mode: multiply;
+}
+
+.next-button {
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    position: relative;
+    right: -178px;
+    bottom: -125px;
+}
+
+.next-button h2 {
+    padding: 0 16px;
+    color: var(--american);
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+.next-button a {
+    display: flex;
+    background-color: var(--american);
+    color: var(--giants);
+    font-size: 1.5vw;
+    width: 4vw;
+    height: 4vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
     background-color: magenta;
 }
 
