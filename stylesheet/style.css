@@ -64,7 +64,7 @@ img {
 }
 
 .section {
-    margin: 0 80px;
+    margin:0 80px;
 }
 
 /* ======================== Main ======================== */
@@ -157,6 +157,31 @@ img {
     bottom: -4px;
 }
 
+.about {
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.about h1 {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 88px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+.text {
+    width: 934px;
+    display: flex;
+    justify-content: center;
+}
+.picture {
+    width: 934px;
+}
+
 .galeri {
     background-color: orange;
     text-align :center;
@@ -181,9 +206,6 @@ img {
     background-color: peru;
 }
 
-.about {
-    background-color: magenta;
-}
 
 .footer {
     background-color: orange;
