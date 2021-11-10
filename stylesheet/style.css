@@ -158,11 +158,10 @@ img {
 }
 
 .about {
-    background-color: magenta;
     text-align: center;
-    align-items: center;
     display: flex;
     justify-content:center;
+    align-items: center;
     flex-direction: column;
 
 }
@@ -185,7 +184,48 @@ img {
 
 .galeri {
     background-color: orange;
+    text-align :center;
+    margin : 160px 0
 }
+
+.baris{
+    display: flex;
+    justify-content: center;
+    width:100%;
+
+}
+
+.gambar{
+    display:flex ;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.galeri h1{
+        font-style: normal;
+        font-weight: 600;
+        line-height: 88px;
+        font-size: 72px;
+        text-transform:uppercase;
+        text-decoration-line: underline;
+    }
+.text-galeri{
+    background-color :black;
+    width:100%;
+
+}
+
+.text-galeri h4{ 
+    color:orange;
+}
+
+.text-galeri p
+{ color:white;
+}
+
 
 .contact {
     background-color: peru;
