@@ -89,7 +89,7 @@ img {
 .main-title .number {
     transform: rotate(90deg);
     position: relative;
-    top: 320px;
+    top: 280px;
     left: -280px;
 }
 
@@ -150,29 +150,11 @@ img {
 
 .next-button {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    transform: rotate(-90deg);
-    position: relative;
-    right: -178px;
-    bottom: -125px;
-}
-
-.next-button h2 {
-    padding: 0 16px;
-    color: var(--american);
-    text-transform: uppercase;
-    font-size: 1.5vw;
-}
-
-.next-button a {
-    display: flex;
-    background-color: var(--american);
-    color: var(--giants);
-    font-size: 1.5vw;
-    width: 4vw;
-    height: 4vw;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    mix-blend-mode: normal;
+    bottom: -4px;
 }
 
 .about {
