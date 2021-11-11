@@ -83,7 +83,7 @@ img {
 }
 
 .section {
-    margin:120px 80px;
+    margin: 120px 80px;
     padding-top: 40px;
 }
 
@@ -290,6 +290,7 @@ img {
 .text-galeri p{
     color: var(--cultured);
     padding: 0 16px;
+    font-size: 14px;
     
 }
 

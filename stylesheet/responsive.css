@@ -1,11 +1,11 @@
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
     .section {
-        margin: 0 8px;
+        margin: 0 24px;
     }
 
     .header {
         width: 100%;
-        padding: 0 16px;
+        padding: 0 24px;
         margin: 0;
     }
 
@@ -22,8 +22,10 @@
 
     .image-note {
         transform: rotate(0deg);
-        top: 80px;
-        right: 100px;
+        top: 100px;
+        right: 160px;
+        width: fit-content;
+        font-size: 12px;
     }
 
     .rectangle {
@@ -49,11 +51,12 @@
 
     .baris {
         flex-wrap: wrap;
+        margin: 0;
     }
 
     .gambar {
         width: 50%;
-        padding: 16px;
+        padding: 40px;
     }
 
     .contact {
@@ -68,5 +71,88 @@
     .footer {
         margin: 0;
         padding: 24px 16px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .gambar {
+        padding: 24px;
+    }
+
+    .image-note {
+        right: 120px;
+    }
+}
+
+@media all and (max-width: 670px) {
+
+    .section h1 {
+        font-size: 48px;
+        padding-top: 32px;
+        margin: 0;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main-title {
+        flex: 0;
+        position: relative;
+        top: 120px;
+    }
+
+    .main-title h1 {
+        position: static;
+        font-size: 80px;
+    }
+
+    .image {
+        margin-top: 40vw;
+    }
+
+    .image-note {
+        top: 300px;
+        font-size: 9px;
+    }
+
+    .rectangle {
+        top: 400px;
+        height: 72vw;
+        width: 80%;
+    }
+
+    .bot-nav {
+        display: flex;
+    }
+
+    .text-about p {
+        text-align: justify;
+        margin: 16px 0;
+    }
+
+    .gambar {
+        width: 100%;
+        padding: 16px 0;
+    }
+
+    .picture img {
+        width: 100%;
+    }
+
+    .footer {
+        padding-bottom: 88px;
+    }
+
+    .footer-left h4 {
+        font-size: 12px;
+    }
+
+    .footer-right h3 {
+        font-size: 10px;
     }
 }
