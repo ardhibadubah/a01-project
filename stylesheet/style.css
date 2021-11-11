@@ -191,8 +191,8 @@ img {
 }
 
 .galeri {
-    background-color: orange;
     text-align :center;
+    padding-top: 240px;
 }
 
 .baris{
@@ -233,11 +233,15 @@ img {
 }
 
 .text-galeri h4{ 
-    color:orange;
+    color:var(--giants);
+    padding: 16px;
+    text-transform:uppercase;
 }
 
-.text-galeri p
-{ color:white;
+.text-galeri p{
+    color:white;
+    padding: 16px;
+    
 }
 
 
