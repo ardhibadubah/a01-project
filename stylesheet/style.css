@@ -163,11 +163,14 @@ img {
     height: fit-content;
 }
 
+.next-button a:hover {
+    color: var(--cultured);
+}
+
 .next-button a {
     color: var(--eerie);
     text-transform: uppercase;
     font-weight: 800;
-    
 }
 
 
@@ -181,6 +184,10 @@ img {
     align-items: center;
     margin-right: 8px;
     padding: 24px;
+}
+
+.fas:hover {
+    background-color: var(--cultured);
 }
 
 /* ======================== About ======================== */
