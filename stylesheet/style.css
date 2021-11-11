@@ -2,10 +2,16 @@
 
 
 * {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+p, a, div {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    box-sizing: border-box;
 }
 
 html {
@@ -13,8 +19,7 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--cultured);
+    background-color:  var(--cultured);
 }
 
 img {
@@ -51,13 +56,12 @@ img {
     padding: 0 80px;
 }
 
-.header-left .logo {
+.header-left h2 {
     display: flex;
     justify-content: center;
-    width: 90%;
-    font-size: 20px;
-    color: var(--eerie);
+    font-size: 24px;
     font-weight: 700;
+    color: var(--eerie);
 }
 
 
@@ -80,12 +84,15 @@ img {
 
 .section {
     margin:120px 80px;
+    padding-top: 40px;
 }
 
 /* ======================== Main ======================== */
 .main {
     display: flex;
     align-items: center;
+    padding-top: 0px;
+    height: 100%;
 }
 
 .main-title {
@@ -100,21 +107,19 @@ img {
     top: -80px;
 }
 
-.main-title .number {
-    transform: rotate(90deg);
-    position: relative;
-    top: 280px;
-    left: -280px;
+.main-title p {
+    font-weight: 500;
 }
 
 .image {
     display: flex;
     justify-content: center;
     flex: 5;
+    height: 100%;
 }
 
 .image img {
-    width: 72%;
+    width: 70%;
     min-width: 320px;
 }
 
@@ -123,39 +128,21 @@ img {
     font-size: 14px;
     font-weight: 500;
     transform: rotate(90deg);
+    transform-origin: top right;
     position: absolute;
-    right: 24px;
-    top: 140px;
+    width: fit-content;
+    height: fit-content;
+    right: 80px;
+    top: 240px;
     border-bottom: 1px solid var(--eerie);
+    
 }
 
-.note-sentence {
-    position: absolute;
-    top: 180px;
-    right: 565px;
-    width: 240px;
-}
-
-.note-sentence h2{
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    -webkit-text-stroke: 1px var(--eerie);
-    -webkit-text-fill-color: var(--cultured);
-}
-
-.note-sentence p {
-    font-size: 11px;
-    line-height: 13px;
-    font-weight: 500;
-    margin-top: 16px;
-}
 
 .rectangle {
     background-color: var(--giants);
     position: absolute;
-    width: 60%;
+    width: 56%;
     height: 22vw;
     right: 0;
     top: 283px;
@@ -164,11 +151,36 @@ img {
 
 .next-button {
     display: flex;
-    flex-direction: column;
     align-items: center;
     position: absolute;
     mix-blend-mode: normal;
-    bottom: -4px;
+    bottom: -48px;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    font-size: 16px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.next-button a {
+    color: var(--eerie);
+    text-transform: uppercase;
+    font-weight: 800;
+    
+}
+
+
+.fas {
+    background-color: var(--eerie);
+    color: var(--giants);
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    padding: 24px;
 }
 
 /* ======================== About ======================== */
@@ -182,7 +194,7 @@ img {
 
 .about h1 {
     font-weight: 600;
-    font-size: 72px;
+    font-size: 56px;
     line-height: 88px;
     text-transform: uppercase;
     text-decoration-line: underline;
@@ -194,8 +206,7 @@ img {
     width: 934px;
     display: flex;
     justify-content: center;
-    margin: 40px 0;
-    padding: 40px 0;
+    margin: 64px 0;
 }
 .picture {
     width: 100%;
@@ -245,14 +256,12 @@ img {
 .picture {
     display: flex;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
 }
 
 .galeri h1{
     font-weight: 600;
     line-height: 88px;
-    font-size: 72px;
+    font-size: 56px;
     text-transform:uppercase;
     text-decoration-line: underline;
     margin: 80px 0;
@@ -281,17 +290,21 @@ img {
     align-items: center;
 }
 .judul h1 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 72px;
 }
 
 .kontak {
     display: flex;
-    width: 90%;
+    justify-content: space-between;
+    width: 100%;
+    margin: 8px;
 }
 
 .kontak input {
-    width: 50%;
+    margin: 0px;
+    width: 49%;
+
 }
 
 .formulir {
@@ -302,7 +315,7 @@ img {
 }
 
 input {
-    width: 80%;
+    width: 100%;
     height: 49px;
     padding: 0 16px;
     margin: 8px;
@@ -312,7 +325,7 @@ input {
 }
 
 textarea {
-    width: 80%;
+    width: 100%;
     height: 100px;
     padding: 16px;
     margin: 8px;
@@ -324,7 +337,7 @@ textarea {
 .tombol-kirim {
     background-color: var(--giants);
     font-weight: 800;
-    width: 90%;
+    width: 100%;
     
 }
 .tombol-kirim:hover {
