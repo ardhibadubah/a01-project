@@ -1,39 +1,146 @@
+:root {
+    --cultured : #F6F5F6;
+    --giants : #ff5f16;
+    --eerie : #191124;
+}
+
 @keyframes rectangle {
     0% {
         width: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+    
+    50% {
+        width: 0;
         opacity: 0.2;
+        overflow: hidden;
+
     }
    
     100% {
-        width: 56%;
         opacity: 1;
     }
 }
 
 @keyframes next {
     0% {
-        bottom: 10px;
+        bottom: 100px;
         opacity: 0;
         display: none;
     }
 
     50% {
-        bottom: 80px;
+        bottom: 100px;
         opacity: 0;
         display: none;
     }
 
     100% {
-        bottom: -48px;
         opacity: 1;
         display: block;
     }
 }
+@keyframes image {
+    0% {
+        opacity: 0;
+        padding-top: 80px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+        top: -200px;
+    }
+    
+    50% {
+        opacity: 0;
+        top: -200px;
+    }
+
+    100% {
+        opacity: 1;
+        top: -80px;
+    }
+}
+
+@keyframes note {
+    0% {
+        right: calc(100px);
+        opacity: 0;
+        
+    }
+
+    75% {
+        right: calc(100px);
+        opacity: 0;
+    }
+    
+    100% { 
+        right: calc();
+        opacity: 1;
+    }
+}
+
+@keyframes welcome {
+    0% {
+        opacity: 0;
+    }
+    
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes header {
+    0% {
+        color: var(--cultured);
+    }
+
+    50% {
+        color: var(--giants);
+    }
+
+    100% {
+        color: var(--eerie);
+
+    }
+}
 
 .rectangle {
-    animation: rectangle 3s ease-out;
+    animation: rectangle 4s ease-out;
 }
 
 .next-button {
-    animation: next 6s ease-out;
+    animation: next 7s ease-in-out;
+}
+
+.image img {
+    animation: image 2s ease-out;
+}
+
+.main-title h1 {
+    animation: title 3s ease-out;
+}
+
+.main-title p {
+    animation: welcome 7s ease-out;
+}
+
+.image-note {
+    animation: note 4s linear;
+}
+
+.header-left h2,
+.navigation a {
+    animation: header 6s ease-in-out;
 }
