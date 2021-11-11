@@ -30,7 +30,6 @@ img {
 :root {
     --cultured : #F6F5F6;
     --giants : #ff5f16;
-    --american : #4d1860;
     --eerie : #191124;
 }
 
@@ -354,7 +353,7 @@ textarea {
     
 }
 .tombol-kirim:hover {
-    background-color: var(--american);
+    background-color: var(--eerie);
     color: var(--giants);
     cursor: pointer;
 }
@@ -385,7 +384,7 @@ textarea {
     
 }
 .sosmed a:hover {
-    color: var(--american);
+    color: var(--eerie);
 }
 
 
@@ -406,6 +405,9 @@ textarea {
 
 .bot-nav a {
     color: var(--giants);
+}
+.bot-nav a:hover {
+    color: var(--cultured);
 }
 
 .bot-nav p {
