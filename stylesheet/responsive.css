@@ -1,0 +1,68 @@
+@media all and (max-width: 1000px) {
+    .section {
+        margin: 0 8px;
+    }
+
+    .header {
+        width: 100%;
+        padding: 0 16px;
+        margin: 0;
+    }
+
+    .header-left {
+        padding-left: 0px;
+        flex: 1;
+    }
+
+    .navigation {
+        padding-right: 0px;
+        flex: 5;
+        justify-content: space-between;
+    }
+
+    .image-note {
+        transform: rotate(0deg);
+        top: 80px;
+        right: 100px;
+    }
+
+    .rectangle {
+        top: 220px;
+    }
+
+    .next-button {
+        font-size: 14px;
+        bottom: -24px;
+    }
+
+    .fa-chevron-left {
+        padding: 12px;
+    }
+
+    .text-about {
+        width: 90%;
+    }
+
+    .baris {
+        flex-wrap: wrap;
+    }
+
+    .gambar {
+        width: 50%;
+        padding: 16px;
+    }
+
+    .contact {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .judul {
+        margin-bottom: 80px;
+    }
+
+    .footer {
+        margin: 0;
+        padding: 24px 16px;
+    }
+}

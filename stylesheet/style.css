@@ -174,7 +174,7 @@ img {
 }
 
 
-.fas {
+.fa-chevron-left {
     background-color: var(--eerie);
     color: var(--giants);
     height: 20px;
@@ -186,7 +186,7 @@ img {
     padding: 24px;
 }
 
-.fas:hover {
+.fa-chevron-left:hover {
     background-color: var(--cultured);
 }
 
@@ -215,6 +215,11 @@ img {
     justify-content: center;
     margin: 64px 0;
 }
+
+.text-about p {
+    text-align: left;
+}
+
 .picture {
     width: 100%;
     margin: 40px 20px;
@@ -254,10 +259,10 @@ img {
     background-color :var(--eerie);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width:100%;
     text-align: left;
-    height: 120px;
+    height: 20vh;
     padding: 16px 0;
 }
 .picture {
@@ -361,9 +366,14 @@ textarea {
     padding: 24px 80px;
 }
 
+.footer-right h3 {
+    font-size: 16px;
+}
+
 .sosmed {
     display: flex;
     justify-content: space-around;
+    margin: 8px 0;
 }
 
 .sosmed a {
