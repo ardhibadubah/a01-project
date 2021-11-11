@@ -158,11 +158,10 @@ img {
 }
 
 .about {
-    background-color: magenta;
     text-align: center;
-    margin: 160px 0;
     display: flex;
     justify-content:center;
+    align-items: center;
     flex-direction: column;
 
 }
