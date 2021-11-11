@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--cultured);
@@ -29,33 +33,39 @@ img {
 
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 0 80px;
-    padding: 16px 0;
+    justify-content: space-evenly;
+    align-items: center;
     text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--cultured);
+    height: 56px;
 }
 
 .header-left {
     display: flex;
     justify-content: space-between;
-    flex: 1;
+    width: 50%;
+    padding: 0 80px;
 }
 
-.header-left h2 {
+.header-left .logo {
+    display: flex;
+    justify-content: center;
+    width: 90%;
     font-size: 20px;
     color: var(--eerie);
     font-weight: 700;
 }
 
-.header-right {
-    flex: 5;
-}
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    margin-left: 50%;
+    width: 50%;
+    padding: 0 80px;
 }
 
 .navigation a {
@@ -64,15 +74,18 @@ img {
     color: var(--eerie);
 }
 
+.navigation a:hover {
+    color: var(--giants);
+}
+
 .section {
-    margin:0 80px;
+    margin:120px 80px;
 }
 
 /* ======================== Main ======================== */
 .main {
     display: flex;
     align-items: center;
-    padding-top: 40px;
 }
 
 .main-title {
@@ -158,13 +171,13 @@ img {
     bottom: -4px;
 }
 
+/* ======================== About ======================== */
 .about {
     text-align: center;
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .about h1 {
@@ -173,26 +186,31 @@ img {
     line-height: 88px;
     text-transform: uppercase;
     text-decoration-line: underline;
+    padding: 16px;
 }
-.text {
+
+
+.text-about {
     width: 934px;
     display: flex;
     justify-content: center;
+    margin: 40px 0;
+    padding: 40px 0;
 }
 .picture {
-    width: 934px;
-    margin: 0 20px;
+    width: 100%;
+    margin: 40px 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .picture img {
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    width: 70%;
 }
 
+/* ======================== Galeri ======================== */
 .galeri {
     text-align :center;
-    padding-top: 240px;
 }
 
 .baris{
@@ -210,6 +228,20 @@ img {
     align-items: center;
 }
 
+.gambar img {
+    height: 100%;
+}
+
+.text-galeri{
+    background-color :var(--eerie);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100%;
+    text-align: left;
+    height: 120px;
+    padding: 16px 0;
+}
 .picture {
     display: flex;
     width: 100%;
@@ -218,39 +250,34 @@ img {
 }
 
 .galeri h1{
-    font-style: normal;
     font-weight: 600;
     line-height: 88px;
     font-size: 72px;
     text-transform:uppercase;
     text-decoration-line: underline;
+    margin: 80px 0;
 }
 
-.text-galeri{
-    background-color :black;
-    width:100%;
-    text-align: left;
-}
 
 .text-galeri h4{ 
     color:var(--giants);
-    padding: 16px;
+    font-size: 14px;
+    padding: 0 16px;
     text-transform:uppercase;
 }
 
 .text-galeri p{
-    color:white;
-    padding: 16px;
+    color: var(--cultured);
+    padding: 0 16px;
     
 }
 
 
+/* ======================== Contact ======================== */
 .contact {
     
     display: flex;
     justify-content: space-between;
-    padding-top: 240px;
-    padding-bottom: 120px;
     align-items: center;
 }
 .judul h1 {
@@ -260,7 +287,7 @@ img {
 
 .kontak {
     display: flex;
-    
+    width: 90%;
 }
 
 .kontak input {
@@ -269,26 +296,35 @@ img {
 
 .formulir {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
-    width: 457px;
+    width: 80%;
     height: 49px;
     padding: 0 16px;
     margin: 8px;
     border-radius: 25px;
+    font-family: Montserrat;
+    font-weight: 500;
 }
+
 textarea {
-    width: 457px;
+    width: 80%;
     height: 100px;
     padding: 16px;
     margin: 8px;
     border-radius: 25px;
+    font-family: Montserrat;
+    font-weight: 500;
 }
+
 .tombol-kirim {
     background-color: var(--giants);
     font-weight: 800;
+    width: 90%;
     
 }
 .tombol-kirim:hover {
