@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -180,27 +181,63 @@ img {
 }
 .picture {
     width: 934px;
+    margin: 0 20px;
+}
+
+.picture img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .galeri {
     background-color: orange;
     text-align :center;
-    margin : 160px 0
 }
+
+.baris{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin: 40px 0;
+}
+
+.gambar{
+    display:flex ;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 .galeri h1{
-    font-size: 72px;
+    font-style: normal;
     font-weight: 600;
     line-height: 88px;
+    font-size: 72px;
     text-transform:uppercase;
     text-decoration-line: underline;
 }
+
 .text-galeri{
     background-color :black;
+    width:100%;
+    text-align: left;
 }
+
 .text-galeri h4{ 
     color:orange;
 }
-.text-galeri p{ color:white;
+
+.text-galeri p
+{ color:white;
 }
 
 
