@@ -20,6 +20,7 @@ html {
 
 body {
     background-color:  var(--cultured);
+    overflow-x: hidden;
 }
 
 img {
@@ -37,7 +38,7 @@ img {
 
 .header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-transform: uppercase;
     position: fixed;
@@ -69,6 +70,7 @@ img {
     justify-content: space-between;
     width: 50%;
     padding: 0 80px;
+    animation: none;
 }
 
 .navigation a {
@@ -91,7 +93,6 @@ img {
     display: flex;
     align-items: center;
     padding-top: 0px;
-    height: 100%;
 }
 
 .main-title {

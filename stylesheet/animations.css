@@ -1,0 +1,39 @@
+@keyframes rectangle {
+    0% {
+        width: 0;
+        opacity: 0.2;
+    }
+   
+    100% {
+        width: 56%;
+        opacity: 1;
+    }
+}
+
+@keyframes next {
+    0% {
+        bottom: 10px;
+        opacity: 0;
+        display: none;
+    }
+
+    50% {
+        bottom: 80px;
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        bottom: -48px;
+        opacity: 1;
+        display: block;
+    }
+}
+
+.rectangle {
+    animation: rectangle 3s ease-out;
+}
+
+.next-button {
+    animation: next 6s ease-out;
+}
