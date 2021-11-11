@@ -157,6 +157,14 @@ img {
     bottom: -4px;
 }
 
+.galeri {
+    background-color: orange;
+}
+
+.contact {
+    background-color: peru;
+}
+
 .about {
     background-color: magenta;
 }
