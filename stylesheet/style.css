@@ -358,6 +358,7 @@ textarea {
     cursor: pointer;
 }
 
+/* ======================== Footer ======================== */
 .footer {
     background-color: var(--giants);
     color: var(--cultured);
@@ -379,9 +380,46 @@ textarea {
 .sosmed a {
     font-size: 24px;
     color:var(--cultured);
-
-
+    
+    
 }
 .sosmed a:hover {
     color: var(--american);
+}
+
+
+/* ======================== Mobile-nav ======================== */
+.bot-nav {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+    padding: 16px 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: var(--eerie);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.bot-nav a {
+    color: var(--giants);
+}
+
+.bot-nav p {
+    color: var(--giants);
+    font-size: 10px;
+}
+
+.home-btn,
+.about-btn, 
+.galeri-btn,
+.contact-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
 }

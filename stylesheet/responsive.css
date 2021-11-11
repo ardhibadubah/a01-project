@@ -43,6 +43,10 @@
         width: 90%;
     }
 
+    .picture img {
+        width: 80%;
+    }
+
     .baris {
         flex-wrap: wrap;
     }
