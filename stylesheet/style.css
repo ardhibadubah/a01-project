@@ -64,7 +64,7 @@ img {
 }
 
 .section {
-    margin: 0 80px;
+    margin:0 80px;
 }
 
 /* ======================== Main ======================== */
@@ -157,6 +157,20 @@ img {
     bottom: -4px;
 }
 
+.about {
+    background-color: magenta;
+    text-align: center;
+    margin: 160px 0;
+}
+
+.about h1 {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 88px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+
 .galeri {
     background-color: orange;
 }
@@ -165,9 +179,6 @@ img {
     background-color: peru;
 }
 
-.about {
-    background-color: magenta;
-}
 
 .footer {
     background-color: orange;
